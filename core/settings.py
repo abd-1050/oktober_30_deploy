@@ -31,6 +31,10 @@ DEBUG = os.environ.get("DEBUG", "True").lower() in ("true", "1", "yes")
 
 ALLOWED_HOSTS = []
 
+HOST = os.environ.get('HOST')
+if HOST:
+    ALLOWED_HOSTS.append('https://oktober-30-deploy.onrender.com')
+
 
 # Application definition
 
@@ -138,7 +142,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
