@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 
 HOST = os.environ.get('HOST')
 if HOST:
-    ALLOWED_HOSTS.append('https://oktober-30-deploy.onrender.com')
+    ALLOWED_HOSTS.append('oktober-30-deploy.onrender.com')
 
 
 # Application definition
